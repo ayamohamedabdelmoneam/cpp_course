@@ -63,3 +63,50 @@ int main () {
 }
 
 ````
+## Increment And Decrement Operators
+  - "For incrementing And Decrementing Values"
+     - Pre/Post Increment
+     - Pre/Post Decrement
+  ##  Example 3 :
+````c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int likes = 0;
+  cout << likes-- << "\n"; // 0
+  cout << likes << "\n";   // -1
+
+  int views = 0;
+  cout << --views << "\n"; // -1
+  cout << views << "\n";   // -1
+  return 0;
+}
+````
+## comparison operators or Relational operators:
+- used to compare values 
+- you can use it in such have a program that restricted to the age of users must be greater than 18 year.
+   -  `==` Equal
+   - `!=` Not Equal
+   - `>` Greater Than
+   - `<`Less Than
+   - `>=` Greater Than Or Equal
+   - `<=` Less Than Or Equal
+## Example 4:
+````c++
+#include <iostream>
+using namespace std;
+int main () {
+    cout << (10 == 10) << "\n"; // =1 = true
+    cout << (1000 == 200) << "\n"; // = false
+    cout << (1000 != 200) << "\n"; // True
+    cout << (10 != 10) << "\n";    // 0 => False
+    cout << (40 > 18) << "\n"; // True
+    cout << (20 < 30 ) << "\n"; // True
+    cout << (18 > 18) << "\n"; // 0 => False
+    cout << (40 >= 18) << "\n"; // 1 => True
+    cout << (18 >= 18) << "\n"; // 1 => True
+    return 0;
+}
+````
