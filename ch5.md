@@ -110,3 +110,82 @@ int main () {
     return 0;
 }
 ````
+## Logical Operators
+  - "For Logic Between Values"
+       - `&&` And Must two condition get true
+       - `||` Or
+       - `!` Not
+## Example 5 :
+````c++
+#include <iostream>
+using namespace std;
+int main () {
+    int age;
+    int points;
+    cout << "please enter your age \n";
+    cin >> age ;
+    cout << "please enter your Points \n";
+    cin >> points;
+    cout << (age>= 18 && points>= 500) << endl;
+    cout << (age>= 18 || points>= 500) << endl; // one of them get true
+    cout << (10 == 10) << endl;   // 1 => True
+    cout << !(10 == 10) << endl;  // 0 => False
+    cout << !(100 == 10) << endl; // 1 => True
+
+````
+## Operators Precedence 
+  - "Which One Has Higher Precedence"
+- Refernce
+  - Operators Precedence Table
+- Search
+    - Bitwise Operators 
+    - Spaceship Operator
+- Training
+    - Try Operators Yourself Before Browsing References
+## Example:
+````c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << 10 + 5 * 5 << "\n";
+  // 5 * 5 = 25
+  // 10 + 25 = 35
+  cout << 10 - 5 * 5 << "\n";
+  // 5 * 5 = 25
+  // 10 - 25 = -15
+  cout << 20 / 5 * 4 << "\n";
+  // 20 / 5 = 4
+  // 4 * 4 = 16
+  cout << 10 + 20 / 5 * 4 << "\n";
+  // 10 + 16 = 26
+  // 20 / 5 = 4
+  // 4 * 4 = 16
+  cout << (10 + 5) * 5 << "\n"; // (15) * 5 = 75
+  return 0;
+}
+````
+<hr>
+
+## Control Flow :
+- if Condition .
+- syntax:
+  - if(condition get true) { // Do Something }
+## Example:
+````c++
+#include <iostream>
+using namespace std;
+int main() {
+    int age;
+    cout << "please Enter Your Age\n";
+    cin >> age;
+    if (age < 18 ) {
+        cout << "This Program Is Not Suitable For You \n";
+    }
+    cout << "Hello\n";
+
+    main ();
+}
+
+````
