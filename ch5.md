@@ -189,3 +189,231 @@ int main() {
 }
 
 ````
+<hr>
+
+## Control Flow
+- If ... else if ... else
+
+- Syntax
+- if (Condition Is True)
+{
+// Do Something
+}
+## Example 
+````c++
+#include <iostream>
+using namespace std;
+int  main() {
+    int age,
+    points,
+    rank;
+    cout<< "Please Enter Your Age\n";
+    cin >> age;
+    cout<< "Please Enter Your Points\n";
+    cin >> points;
+    cout << "please Enter Your rank\n";
+    cin >> rank;
+    if (age >= 18) {
+        cout << "Your Age Is Ok\n";
+    } else if (points > 500) {
+        cout << "Your Points Is Ok\n";
+
+    }else if (rank > 5) {
+        cout << "Your Rank Is Ok\n";
+
+    } else {
+        cout << "Iam Sorry\n";
+    }
+    main();
+}
+````
+##  Nested If Conditions:
+## Example:
+````c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int age = 25;
+  int points = 1500;
+
+  if (age >= 18)
+  {
+    cout << "Welcome Your Age Is OK\n";
+    if (points >= 1000)
+    {
+      cout << "You Are VIP\n";
+    }
+  }
+
+  return 0;
+}
+````
+## Ternary Operator
+- Syntax
+   - (Condition) ? True : False;
+  ## Example:
+````c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int age = 15;
+
+  if (age >= 18)
+  {
+    cout << "Your Age Is OK\n";
+  }
+  else
+  {
+    cout << "Your Age Is Not OK\n";
+  }
+
+  cout << (age >= 18 ? "Age Is OK\n" : "Age Is Not OK\n");
+
+  string msg = age >= 18 ? "Age Is OK\n" : "Age Is Not OK\n";
+
+  cout << msg;
+
+  return 0;
+}
+````
+<hr>
+
+## Nested Ternary Operator
+- Syntax:
+   - (Condition Is True) ? True : False;
+## Example:
+````c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int age = 15;
+  int points = 450;
+
+  if (age >= 18)
+  {
+    cout << "OK\n";
+  }
+  else
+  {
+    if (points >= 500)
+    {
+      cout << "OK Because Of Points\n";
+    }
+    else
+    {
+      cout << "No Age Or Points\n";
+    }
+  }
+
+  cout << (age >= 18 ? "OK\n" : (points >= 500 ? "OK P\n" : "No P\n"));
+
+  cout << (points >= 500 ? "OK P\n" : "No P\n");
+
+  if (age >= 18)
+    cout << "OK\n";
+  else
+    cout << "Not OK\n";
+
+  return 0;
+}
+````
+#  If Condition Trainings:
+## App 1:
+- Even / Odd Checker:
+````c++
+#include <iostream>
+using namespace std;
+int  main() {
+    int num;
+    cout << "Please Enter Number\n";
+    cin >> num;
+    if (num %2 == 0) {
+        cout<< "This Number is Even\n";
+    }else
+    {
+        cout << " This Number Is Odd\n";
+    }
+    main();
+} 
+````
+<hr>
+
+## App2:
+- Find Greatest Number:
+````c++
+#include <iostream>
+using namespace std;
+int  main() {
+    int a,b,c;
+    cin >> a >> b >> c;
+    if (a > b && a > c)
+    {
+        cout << a << " Is The Greatest Number\n";
+    }
+    else if (b > a && b > c)
+    {
+        cout << b << " Is The Greatest Number\n";
+    }
+    else
+    {
+        cout << c << " Is The Greatest Number\n";
+    }
+main();
+}
+````
+<hr>
+
+## App3:
+- User Rank Checker:
+````c++
+#include <iostream>
+using namespace std;
+int main () {
+    int points;
+    cin >> points;
+    if (points > 0 && points <= 500 ){
+        cout << "Not Bad\n";
+    }else if (points > 500 && points <= 1000){
+        cout << "The points Is Very Good\n";
+    }else{
+        cout << " VIP\n";
+    }
+    return 0;
+} 
+````
+<hr>
+
+## App4:
+- Simple Calculator:
+````c++
+#include <iostream>
+using namespace std;
+int main () {
+    int num1, num2, operation;
+    cout << "Add Number One\n";
+    cin >> num1;
+    cout << "Add Number Two\n";
+    cin >> num2;
+    cout << "Add Type Of Operation\n";
+    cin >> operation;
+    if (operation == 1) {
+        cout << " you Request sum of two Number" << num1 + num2 << "\n";
+    }else if (operation == 2) {
+        cout << num1 - num2 << "\n";
+    }else if (operation == 3) {
+        cout << num1 * num2 << "\n";
+    }else if (operation == 4) {
+        cout << num1 / num2 << "\n";
+    }else{
+        cout << "Operation Is Not Valid\n";
+    }
+    return 0;
+} 
+
+````
